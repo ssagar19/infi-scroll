@@ -1,6 +1,6 @@
 const Form = (props) => {
     return (
-        <form className="form-inline justify-content-center m-2">
+        <form className="form-inline justify-content-center m-2 search-form">
             <input
                 value={props.search}
                 onChange={props.handleSearchChange}
@@ -8,11 +8,7 @@ const Form = (props) => {
                 placeholder="search"
                 className="form-control"
             />
-            <button
-                onClick={props.handleSubmit}
-                type="submit"
-                className="btn btn-primary mx-2"
-            >
+            <button type="submit" className="btn btn-primary mx-2">
                 Search
             </button>
         </form>
