@@ -5,12 +5,16 @@ import InfiniteScroll from "react-infinite-scroll-component";
 
 const Giphy = () => {
     const [search, setSearch] = useState("");
+
     const [images, setImages] = useState([]);
+
     const [page, setPage] = useState(1);
+
     useEffect(() => {
         fetchData();
     }, [page]);
 
+    // used asynd and await for fetching data
     async function fetchData() {
         if (search) {
             const res = await Axios.get(
