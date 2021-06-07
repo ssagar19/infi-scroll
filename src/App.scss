@@ -13,9 +13,12 @@ nav {
         border-radius: 50px;
         text-align: center;
         background-color: #ffffff96;
-        font-size: 70px;
+        font-size: 38px;
+        width: 200px;
+        left: 85px;
         position: relative;
-        top: 80px;
+        top: 40px;
+        text-align: center !important;
         font-family: "Mate SC", serif;
     }
     #photos {
@@ -67,7 +70,7 @@ button {
     form {
         display: flex;
         justify-content: center;
-        margin-top: 118px !important;
+        margin-top: 58px !important;
     }
 }
 
